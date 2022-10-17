@@ -44,7 +44,7 @@ namespace WpfApp1ИСРПО_Гуляева_пр_8
 
                X.Text += "x=" + Convert.ToString(x) + Environment.NewLine;
                Y.Text += "y=" + Convert.ToString(x) + Environment.NewLine;
-
+                
                 x = x + dx;
 
             }
