@@ -24,5 +24,27 @@ namespace WpfApp1ИСРПО_Гуляева_пр_8
         {
             InitializeComponent();
         }
+
+        private void Schet_Click(object sender, RoutedEventArgs e)
+        {
+            // Считываем начальных данных
+
+            double x0 = Convert.ToDouble(X0.Text);
+            double xk = Convert.ToDouble(Xk.Text);
+            double dk = Convert.ToDouble(Dx.Text);
+
+            //Цикл для табулирования функции
+
+            double x = x0;
+            while (x <= (xk + dx / 2))
+            {
+                double y = a * Math.Log(x);
+
+                X.Text += "x=" + Convert.ToString(x) + Environment.NewLine;
+                Y.Text += "y=" + Convert.ToString(y) + Environment.NewLine;
+
+                x = x + dx;
+            }
+        }
     }
 }

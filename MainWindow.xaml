@@ -6,7 +6,39 @@
         xmlns:local="clr-namespace:WpfApp1ИСРПО_Гуляева_пр_8"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+      <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content=" "/>
+        <TextBox Grid.Column="1" Margin="0,6,6,6"/>
         
+        <TextBox Grid.Column="1" Margin="0,6,6,6"/>
+        <Label Grid.Row="1" Content="Xk" Margin="0,6,0,0"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Margin="0,6,0,0"/>
+        <Label Grid.Row="2" Content=" " Margin="0,6,0,0"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Margin="0,6,0,0"/>
+        <TextBox Grid.ColumnSpan="2" Grid.Row="2" Margin="0,46,0,0" Grid.RowSpan="2"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Margin="0,6,0,0"/>
+        <Button Grid.Column="1" Grid.Row="5" Content="Выполнить"/>
+        <Label Grid.Row="0" Content="X0"/>
+        <TextBox x:Name ="P" Grid.Column="1" Margin="0,6,6,6"/>
+        <TextBox x:Name ="A" Grid.Column="1" Margin="0,6,6,6"/>
+        <Label Grid.Row="2" Content="Dx" Margin="0,6,0,0"/>
+        <TextBox x:Name ="C" Grid.Column="1" Grid.Row="2" Margin="0,6,6,6"/>
+        <TextBox x:Name ="B" Grid.Column="1" Grid.Row="2" Margin="0,6,6,6"/>
+        <TextBox x:Name ="Itog" Grid.ColumnSpan="2" Grid.Row="2" Margin="0,54,0,138" Grid.RowSpan="3" TextChanged="Itog_TextChanged" Text="A"/>
+        <Button x:Name="Schet" Grid.Column="1" Grid.Row="5" Content="Вычислить" Click="Schet_Click"/>
+
     </Grid>
 </Window>
